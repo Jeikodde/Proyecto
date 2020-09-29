@@ -1,0 +1,291 @@
+:root {
+   --colorSecondary: rgb(58, 92, 241);
+}
+
+.container-depto {
+   width: 100%;
+   height: 600px;
+   margin-top: 70px;
+   position: relative;
+   overflow: hidden;
+}
+
+.img-depto {
+   width: inherit;
+   height: inherit;
+   object-fit: cover;
+}
+
+.color {
+   width: inherit;
+   height: 600px;
+   background: linear-gradient(120deg, rgba(200, 186, 202, 0.527) 0%, rgba(50, 53, 196, 0.438) 100%);
+   position: absolute;
+   top: 70px;
+}
+
+.info-depto {
+   width: 100%;
+   height: 600px;
+   position: absolute;
+   top: 70px;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.title-depto {
+   font-size: 40px;
+   margin-bottom: 10px;
+   animation: izquierda 1.5s ease-in-out;
+}
+
+.desc-depto {
+   width: 60%;
+   background-color: rgba(255, 255, 255, 0.274);
+   border-radius: 10px;
+   padding: 1rem 2.5rem;
+   text-align: center;
+   font-size: 17px;
+   line-height: 25px;
+   animation: derecha 1.5s ease-in-out;
+}
+
+/* Lugares turisticos */
+.lugares {
+   width: 100%;
+   background: linear-gradient(180deg, #fff 50%, rgb(58, 92, 241) 50%);
+   padding: 3rem 0;
+}
+
+.title {
+   font-size: 30px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.lugar {
+   width: 90%;
+   margin: auto;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.lugar-tur {
+   width: 30%;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+   padding: 1rem 1.5rem;
+   text-align: center;
+   cursor: pointer;
+   transition: transform .6s;
+}
+
+.lugar__title {
+   margin-bottom: 10px;
+}
+
+.lugar__img {
+   width: 75%;
+   margin-bottom: 10px;
+}
+
+.lugar-tur:hover {
+   transform: scale(1.05);
+}
+
+.lugar__info {
+   text-align: justify;
+}
+
+.cont-blue {
+   background: var(--colorSecondary);
+   padding: 2rem 0;
+}
+
+/* Datos */
+.contenedor {
+   width: 100%;
+   padding: 2rem 0;
+}
+
+.bg-cont {
+   background-color: var(--colorSecondary);
+}
+
+.datos {
+   width: 90%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+}
+
+.cont-historia {
+   width: 70%;
+}
+
+.historicos {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem 2rem;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   background-color: rgba(235, 224, 224, 0.685);
+}
+
+.historia__info {
+   width: 70%;
+   text-align: justify;
+}
+
+.historia__img {
+   width: 25%;
+}
+
+.cont-lista {
+   width: 28%;
+}
+
+.municipios {
+   background-color: rgba(235, 224, 224, 0.685);
+   padding: 1rem 1.5rem;
+   border-radius: 5px;
+}
+
+/* Personajes */
+.personajes {
+   width: 90%;
+   margin: auto;
+}
+
+.cont-personaje {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.personaje {
+   background-color: #4888ff;
+   width: 30%;
+   padding: 1rem;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.personaje__img {
+   width: 90%;
+   margin-bottom: 10px;
+}
+
+.personaje__nombre {
+   margin-bottom: 10px;
+}
+
+.personaje__info {
+   text-align: justify;
+}
+
+/* Animaciones */
+@keyframes izquierda {
+   0% {
+      transform: translateX(150px);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}
+
+@keyframes derecha {
+   0% {
+      transform: translateX(-150px);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}
+
+/* Breakpoint */
+@media screen and (max-width: 800px) {
+   .info-depto {
+      height: 550px;
+   }
+
+   .color {
+      height: 480px;
+   }
+
+   .desc-depto {
+      width: 80%;
+   }
+
+   .datos {
+      flex-direction: column;
+   }
+
+   .cont-historia {
+      width: 95%;
+      margin: auto;
+   }
+
+   .cont-lista {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .cont {
+      width: 100%;
+   }
+
+   .container-depto, .color {
+      height: 400px;
+   }
+
+   .desc-depto {
+      width: 95%;
+   }
+
+   /* Lugares turisticos */
+   .lugar {
+      flex-wrap: wrap;
+   }
+
+   .lugar-tur {
+      width: 90%;
+      margin-bottom: 15px;
+   }
+
+   /* Personajes */
+   .cont-personaje {
+      flex-wrap: wrap;
+   }
+
+   .personaje {
+      width: 90%;
+      margin-bottom: 15px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .container-depto, .color {
+      height: 350px;
+   }
+   .info-depto {
+      position: initial;
+   }
+
+   .historicos {
+      flex-direction: column;
+   }
+
+   .historia__img {
+      width: 50%;
+      margin-bottom: 10px;
+   }
+}

@@ -1,0 +1,180 @@
+:root {
+   --colorPrimary: #2c6aee;
+   --colorPrimaryHover: #1e5bdd;
+}
+
+.nav {
+   width: 100%;
+   background-color: #fff;
+   height: 70px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+   position: fixed;
+   z-index: 100;
+   padding: 0 2.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   animation: abajo 1s ease-in-out;
+}
+
+.title-logo {
+   font-weight: 600;
+   font-size: 25px;
+}
+
+.links {
+   list-style: none;
+   display: flex;
+}
+
+.links-item {
+   margin-right: 25px;
+   position: relative;
+}
+
+.link {
+   text-decoration: none;
+   color: var(--colorPrimary);
+   font-size: 17px;
+}
+
+/* Icon hamburguer */
+.hamburguer {
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+   cursor: pointer;
+   display: none;
+}
+
+.bars {
+   font-size: 28px;
+}
+
+/* Dropdown */
+
+.dropdown {
+   position: absolute;
+   top: 100%;
+   list-style: none;
+   padding: 0;
+   background-color: #ffffffb7;
+   display: none;
+}
+
+.dropdown-item {
+   margin: 20px 0;
+   padding: 0 25px;
+}
+
+.dropdown-link {
+   text-decoration: none;
+   color: var(--colorPrimary);
+}
+
+.links-item:hover .dropdown {
+   display: block;
+}
+
+/* Breakpoin */
+@media screen and (max-width:750px) {
+   /* Nav */
+   .nav {
+      box-shadow: none;
+   }
+
+   .links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #4643f7e1;
+      flex-direction: column;
+      padding: 0;
+      padding-top: 30px;
+      transform: translate(-100%);
+      transition: 1s ease-in-out;
+   }
+
+   .links-item {
+      padding: 10px 0 10px 50px;
+   }
+
+   .link {
+      color: #fff;
+   }
+
+   .dropdown {
+      position: initial;
+      background-color: transparent;
+   }
+
+   .dropdown-link {
+      color: #d8c8c8da;
+   }
+
+   /* Hamburguer */
+   .hamburguer {
+      display: block;
+   }
+}
+
+/* Clases para los eventos en JavaScript */
+.nav-show {
+   display: block;
+   transform: translate(0);
+}
+
+/* Cuadro de mapa */
+.info {
+   background-color: #424141;
+   width: 350px;
+   height: 200px;
+   position: fixed;
+   bottom: 10px;
+   left: 10px;
+   padding: 0 10px;
+   color: #fff;
+   margin: 10px 0;
+   transform: translate(-120%);
+   transition: 1s;
+}
+
+.transition {
+   transform: translate(0);
+}
+
+.box {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.title-info {
+   margin: 5px 0;
+   text-align: center;
+}
+
+.box__img {
+   width: 40%;
+}
+
+.box__text {
+   margin-bottom: 10px;
+}
+
+.fw-600 {
+   font-weight: 600;
+}
+
+/* Animaciones */
+@keyframes abajo {
+   0% {
+      transform: translateY(-100px);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
