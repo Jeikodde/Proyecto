@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inicio - El Salvador</title>
+   <link rel="stylesheet" href="css/font-awesome.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+   <header class="header">
+      <nav class="nav">
+         <div class="logo">
+            <h3 class="title-logo">Bienvenido</h3>
+         </div>
+
+         <ul class="links" id="link">
+            <li class="links-item">
+               <a href="index.html" class="link">Inicio</a>
+            </li>
+
+            <li class="links-item" id="linkPrincipal">
+               <a href="#" class="link">Zona Occidental <i class="fa fa-caret-down"></i></a>
+               <ul class="dropdown">
+                  <li class="dropdown-item">
+                     <a href="deptos/ahuachapan.html" class="dropdown-link">Ahuachapán</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="deptos/sonsonate.html" class="dropdown-link">Sonsonate</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="deptos/santaana.html" class="dropdown-link">Santa Ana</a>
+                  </li>
+               </ul>
+            </li>
+
+            <li class="links-item">
+               <a href="#" class="link">Zona Central <i class="fa fa-caret-down"></i></a>
+               <ul class="dropdown">
+                  <li class="dropdown-item">
+                     <a href="deptos/lalibertad.html" class="dropdown-link">La Libertad</a>
+                  </li>
+                  
+                  <li class="dropdown-item">
+                     <a href="deptos/sansalvador.html" class="dropdown-link">San Salvador</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="deptos/chalatenango.html" class="dropdown-link">Chalatenango</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="#" class="dropdown-link">Cuscatlán</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="deptos/lapaz.html" class="dropdown-link">La Paz</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="#" class="dropdown-link">Cabañas</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="deptos/sanvicente.html" class="dropdown-link">San Vicente</a>
+                  </li>
+               </ul>
+            </li>
+
+            <li class="links-item">
+               <a href="#" class="link">Zona Oriental <i class="fa fa-caret-down"></i></a>
+               <ul class="dropdown">
+                  <li class="dropdown-item">
+                     <a href="deptos/usulutan.html" class="dropdown-link">Usulután</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="deptos/sanmiguel.html" class="dropdown-link">San Miguel</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="#" class="dropdown-link">Morazán</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                     <a href="#" class="dropdown-link">La Unión</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+
+         <div class="hamburguer" id="bars">
+            <i class="fa fa-bars bars"></i>
+         </div>
+      </nav>
+
+      <div class="container">
+         <section class="header__cont">
+            <article class="header__info">
+               <h2 class="header__title">El Salvador</h2>
+               <p class="header__text">El pulgarcito de Centro Ámerica</p>
+               <a href="#zone-oriental" class="btn btn-principal">Leer más</a>
+            </article>
+
+            <img src="img/Mapazul.png" alt="Mapa de El Salvador" class="header__img" usemap="#mapa">
+            <img src="img/Mapazul.png" alt="Mapa de El Salvador" class="header__img mapa">
+            <map name="mapa" id="mapa" class="mapa">
+               <area shape="rect" coords="125, 125, 215, 300" href="#" alt="santaana" title="Santa Ana">
+               <area shape="rect" coords="10, 225, 100, 370" href="#" alt="ahuachapan" title="Ahuachapan">
+               <area shape="rect" coords="100, 255, 180, 370" href="#" alt="sonsonate" title="Sonsonate">
+               <area shape="rect" coords="200, 250, 260, 400" href="#" alt="lalibertad" title="La Libertad">
+               <area shape="rect" coords="245, 200, 380, 250" href="#" alt="chalatenango" title="Chalatenango">
+               <area shape="rect" coords="255, 300, 320, 400" href="#" alt="sansalvador" title="San Salvador">
+               <area shape="rect" coords="325, 300, 360, 350" href="#" alt="cuscatlan" title="Cuscatlán">
+               <area shape="rect" coords="390, 260, 490, 325" href="#" alt="cabañas" title="Cabañas">
+               <area shape="rect" coords="320, 375, 400, 450" href="#" alt="lapaz" title="La Paz">
+               <area shape="rect" coords="390, 320, 470, 390" href="" alt="sanvicente" title="San Vicente">
+               <area shape="rect" coords="450, 385, 530, 500" href="#" alt="usulutan" title="Usulutan">
+               <area shape="rect" coords="520, 365, 620, 450" href="#" alt="sanmiguel" title="San Miguel">
+               <area shape="rect" coords="580, 260, 660, 350" href="#" alt="morazan" title="Morazán">
+               <area shape="rect" coords="650, 260, 730, 500" href="#" alt="launion" title="La Unión">
+            </map>
+         </section>
+      </div>
+   </header>
+
+   <section>
+      <article class="info" id="info">
+         <h2 class="title-info" id="depto"></h2>
+         <div class="box">
+            <img src="" id="boxImg" class="box__img" alt="">
+            <div class="box__info">
+               <p class="box__text" id="poblacion"></p>
+               <p class="box__text" id="cabecera"></p>
+               <p class="box__text" id="gentilicio"></p>
+            </div>
+         </div>
+      </article>
+   </section>
+
+   <section class="cont-zone" id="zone-oriental">
+      <article class="container zone">
+         <img src="img/Mapazul.png" class="zone__img" alt="">
+
+         <div class="description">
+            <h3 class="title-desc">Zona Oriental</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod animi natus quaerat debitis distinctio id doloribus nostrum inventore aut impedit et expedita, voluptates ratione repudiandae nobis veniam facilis assumenda. Itaque.</p>
+         </div>
+      </article>
+   </section>
+
+   <section class="cont-zone bg-white" id="zone-central">
+      <article class="container zone zone-change">
+         <div class="description bg-blue">
+            <h3 class="title-desc">Zona Central</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod animi natus quaerat debitis distinctio id doloribus nostrum inventore aut impedit et expedita, voluptates ratione repudiandae nobis veniam facilis assumenda. Itaque.</p>
+         </div>
+
+         <img src="img/Mapazul.png" class="zone__img" alt="">
+      </article>
+   </section>
+
+   <section class="cont-zone" id="zone-occidental">
+      <article class="container zone">
+         <img src="img/Mapazul.png" class="zone__img" alt="">
+
+         <div class="description">
+            <h3 class="title-desc">Zona Occidental</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod animi natus quaerat debitis distinctio id doloribus nostrum inventore aut impedit et expedita, voluptates ratione repudiandae nobis veniam facilis assumenda. Itaque.</p>
+         </div>
+      </article>
+   </section>
+
+   <script src="js/nav.js"></script>
+   <script src="js/deptos.js"></script>
+</body>
+</html>
